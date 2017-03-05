@@ -54,6 +54,7 @@ Once I have the training set & the features extraction algorithm I combine every
 8. As a last step I draw the box on the image
 
 The result on an individual image is below:
+
 ![Sliding window on single image](https://github.com/adirery/CarND---Project-5/blob/master/SVC_Example.png)
 
 The end-to-end pipeline is subsequently run on each frame of the project video:
