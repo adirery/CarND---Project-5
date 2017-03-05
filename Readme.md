@@ -26,6 +26,10 @@ For the feature extraction part I used three different methods:
 	- transform_sqrt: True 
 	- feature_vector: True. I experimented a bit with not returning the feature vector and only calculating HOG for the entire picture (instead of each window) which ultimately reduced calculation time massively, however my implementation was not correct somehow and after a lot of debugging I decided to go back to the brute-force method.
 
+Anyhow the results of the hog transformation with the above parameters are below:
+
+![HOG features](https://github.com/adirery/CarND---Project-5/blob/master/HOG_features.png)
+
 2. As a second set of features I use spatial binning. Here I resize the image to smaller dimensions using the openCV function resize and then return a single dimensional feature vector from this array using the ravel function. 
 
 3. As a third set of features I calculate the histogram of the different color channels (in the final version it is RGB).
